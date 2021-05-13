@@ -36,7 +36,7 @@ const routes = {
 };
 
 const App = () => {
-  const pathname = window.location.pathname || '/projectA-pageA';
+  const pathname = window.location.pathname.length > 1 ?  window.location.pathname : '/projectA-pageA';
   const [project, page] = pathname.split('/')[1].split('-');
   const [currentProject, setCurrentProject] = useState(project);
   const [currentPage, setCurrentPage] = useState(page);
@@ -51,7 +51,6 @@ const App = () => {
     setCurrentPage(page);
   }
 
-  console.log(currentPage);
   return <>
     <BrowserRouter>
      <div className='container'>

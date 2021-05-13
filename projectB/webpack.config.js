@@ -6,6 +6,7 @@ module.exports = {
   entry: "./src/index",
   mode: "development",
   devServer: {
+    open: true,
     contentBase: path.join(__dirname, "dist"),
     port: 3002,
     historyApiFallback: {
