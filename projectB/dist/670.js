@@ -1,0 +1,1 @@
+(self.webpackChunkprojectB=self.webpackChunkprojectB||[]).push([[670],{670:(e,t,c)=>{"use strict";c.r(t),c.d(t,{default:()=>r});var l=c(558),n=c.n(l);const r=()=>n().createElement("div",null,n().createElement("h1",null,"project B ---\x3e page D"))}}]);
