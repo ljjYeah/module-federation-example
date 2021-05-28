@@ -52,14 +52,7 @@ module.exports = {
         './PageA': './src/pages/PageA',
         './PageB': './src/pages/PageB',
       },
-      shared: {
-        react: {
-          singleton: true
-        },
-        "react-dom": {
-          singleton: true
-        }
-      },
+      shared: ['react', 'react-dom']
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "./public/index.html"),

@@ -56,14 +56,7 @@ module.exports = {
         projectA: `projectA@//localhost:3001/entry.js`,
         projectB: `projectB@//localhost:3002/entry.js`,
       },
-      shared: {
-        react: {
-          singleton: true
-        },
-        "react-dom": {
-          singleton: true
-        }
-      },
+      shared: ['react', 'react-dom']
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "./public/index.html"),
